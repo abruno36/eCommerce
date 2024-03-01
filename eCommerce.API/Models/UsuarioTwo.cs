@@ -22,9 +22,9 @@ namespace eCommerce.API.Models
         public Contato Contato { get; set; } = new Contato();   
 
         [Write(false)]
-        public ICollection<EnderecoEntrega> EnderecosEntrega { get; set; } = new List<EnderecoEntrega>();
+        public ICollection<EnderecoEntrega> EnderecosEntrega { get; set; } 
 
         [Write(false)]
-        public ICollection<Departamento> Departamentos { get; set; } = new List<Departamento>();
+        public ICollection<Departamento> Departamentos { get; set; }
     }
 }
