@@ -5,7 +5,6 @@ using eCommerce.API.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 
 namespace eCommerce.API.Controllers
 {
