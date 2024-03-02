@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nrOk+8NjClECUdlaW0ykoHVujQe+dJFsPnNo59lB6W0vl0YsK5mGtdBlsGSSAHBo8ovw4syWC4YnjV6ct+2DVg==",
+  "dgSpecHash": "l7qBQlZuFT6tLo9jmtvqxYJpASQpkzKbVOZ633XNsCqG5CIXZlipvfg7oqAjVpvYmz/N13Pns7sF/STmUF38kQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\eCommerce.API\\eCommerce.API\\eCommerce.API.csproj",
+  "projectFilePath": "C:\\Projetos\\DAPPER\\eCommerce.API\\eCommerce.API\\eCommerce.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",

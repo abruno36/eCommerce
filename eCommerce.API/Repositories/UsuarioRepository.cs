@@ -139,9 +139,10 @@ namespace eCommerce.API.Repositories
                 {
                     transaction.Rollback();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     //Retornar para UsuárioController alguma mensagem. Lançar uma exception.
+                    throw new Exception($"Ocorreu um erro ao inserir Usuário. Erro: {ex.Message}");
                 }
             }
             finally
@@ -201,6 +202,7 @@ namespace eCommerce.API.Repositories
                 }
                 catch (Exception)
                 {
+                    throw new Exception($"Ocorreu um erro ao alterar Usuário. Erro: {ex.Message}");
                 }
             }
             finally
