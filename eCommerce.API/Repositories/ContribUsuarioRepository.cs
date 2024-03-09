@@ -1,11 +1,7 @@
-﻿using eCommerce.API.Models;
-using System;
-using System.Collections.Generic;
+﻿using Dapper.Contrib.Extensions;
+using eCommerce.API.Models;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
-using Dapper.Contrib.Extensions;
 
 namespace eCommerce.API.Repositories
 {
@@ -14,7 +10,7 @@ namespace eCommerce.API.Repositories
         private IDbConnection _connection;
         public ContribUsuarioRepository()
         {
-            _connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=eCommerce;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            _connection = new SqlConnection(@"Data Source=DESKTOP-NKSGK1T\SQLEXPRESS;Initial Catalog=eCommerce;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
 
         public List<Usuario> Get()

@@ -1,3 +1,5 @@
+using Dapper.FluentMap;
+using eCommerce.API.Mappers;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+FluentMapper.Initialize(config => {
+    config.AddMap(new UsuarioTwoMap());
+});
 
 var app = builder.Build();
 

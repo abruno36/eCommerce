@@ -15,7 +15,7 @@ namespace eCommerce.API.Controllers
         private IDbConnection _connection;
         public TipsController()
         {
-            _connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=eCommerce;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            _connection = new SqlConnection(@"Data Source=DESKTOP-NKSGK1T\SQLEXPRESS;Initial Catalog=eCommerce;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
 
         [HttpGet("{id}")]
@@ -76,9 +76,6 @@ namespace eCommerce.API.Controllers
         [HttpGet("mapper2/usuarios")]
         public IActionResult Mapper2()
         {
-            FluentMapper.Initialize(config => {
-                config.AddMap(new UsuarioTwoMap());
-            });
             /*
              * Prblema: Mapear colunas com nomes diferentes das propriedades do objeto.
              * Solução 02: C#(POO) => Mapeamento por meio da Biblioteca Dapper.FluentMap.
